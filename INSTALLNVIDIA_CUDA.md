@@ -27,7 +27,10 @@ nvidia-smi
 ## Install Cuda 9.2
 Because previous versions are not compatible with gcc version of 17.10, the best solution is to set up 9.2
 Changing gcc version or setting soft links for another gcc versions may also solve this problem
-
+Anywhere along the road, if you mess up with profile this command will turn it back to default 
+```
+cp /etc/skel/.profile ~/.profile
+```
 Download ['Cuda 9.2'](https://developer.nvidia.com/cuda-92-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu)
 Check the PATHS. Change if necessary. 
 
